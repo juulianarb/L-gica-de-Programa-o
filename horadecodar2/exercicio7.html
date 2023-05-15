@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 7</title>
+    <script>
+        /* 7.Faça um programa que leia 6 números que o usuário vai informar. 
+        Todos os números lidos com valor inferior a 72 devem ser somados.
+         Escreva o valor final da soma efetuada e também todos valores que o usuário informou. */
+
+
+         var num1 = prompt("Informe o primeiro número: ");
+         var num2 = prompt("Informe o segundo número: ");
+         var num3 = prompt("Informe o terceiro número: ");
+         var num4 = prompt("Informe o quarto número: ");
+         var num5 = prompt("Informe o quinto número: ");
+         var num6 = prompt("Informe o sexto número: ");
+
+         num1 = Number(num1);
+         num2 = Number(num2);
+         num3 = Number(num3);
+         num4 = Number(num4);
+         num5 = Number(num5);
+         num6 = Number(num6);
+         
+         let numeros = [num1, num2, num3, num4, num5, num6];
+         let soma = 0;
+
+         if (num1 < 72) {
+            soma += num1;
+         } if (num2 < 72) {
+            soma += num2; 
+         } if (num3 < 72) {
+            soma += num3;
+         } if (num4 < 72) {
+            soma += num4;
+         } if (num5 < 72) {
+            soma += num5;
+         } if (num6 < 72) {
+            soma += num6;
+         }
+         
+         alert("A soma dos valores inferiores a 72 é: " + soma);
+         alert("Os valores informados pelo usuário: " + numeros);
+         
+
+
+
+         
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
