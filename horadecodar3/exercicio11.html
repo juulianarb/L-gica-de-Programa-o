@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 11 estrutura de repetição</title>
+    <script>
+/* 11.Escreva um programa em que o usuário informe 10 valores
+ e escreva quantos desses valores lidos estão entre os números 24 e 42 (incluindo os valores 24 e 42)
+  e quantos deles estão fora deste intervalo.*/
+
+var valores = [];
+for (var i = 1; i <= 10; i++) {
+valores.push(parseFloat(prompt("Digite o " + i + "º valor:")));
+}
+
+var dentro = 0;
+var fora = 0;
+
+for (var i = 0; i < valores.length; i++) {
+if (valores[i] >= 24 && valores[i] <= 42) {
+dentro++;
+} else {
+fora++;
+}
+}
+
+console.log(dentro + " valores estão dentro do intervalo de 24 a 42");
+console.log(fora + " valores estão fora do intervalo de 24 a 42");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
